@@ -19,7 +19,6 @@ export class EventComponent implements OnInit {
 
     constructor(private eventService: EventService) { }
     calendarOptions = {
-        plugins: [dayGridPlugin, timeGrigPlugin, interactionPlugin],
         initialView: 'dayGridMonth',
         events: []
     };
