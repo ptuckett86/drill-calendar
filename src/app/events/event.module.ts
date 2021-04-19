@@ -16,15 +16,15 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
 
 @NgModule({
   declarations: [
-
+    EventComponent
   ],
   imports: [
     FormsModule,
     CommonModule,
     FullCalendarModule
   ],
-  exports: [],
-  providers: [],
+  exports: [EventComponent],
+  providers: [EventService],
   entryComponents: []
 })
 

@@ -11,24 +11,19 @@ import { EventComponent } from 'src/app/events/event.component';
 import { EventModule } from 'src/app/events/event.module';
 import { EventService } from 'src/services/event.service';
 
-FullCalendarModule.registerPlugins([ // register FullCalendar plugins
-  dayGridPlugin,
-  interactionPlugin
-]);
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FullCalendarModule
+    EventModule
   ],
   exports: [],
-  providers: [EventService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
